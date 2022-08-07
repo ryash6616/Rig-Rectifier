@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rig Rectifier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script defer src="./js/app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <h3 class="logo">
+          <span class="fr">Rig</span>
+          <span class="sr">Rectifier</span>
+        </h3>
+        <ul class="nav-ul">
+          <li><a href="#">Home</a></li>
+          <li class="prebuilt-li"><a href="#">Pre Built</a></li>
+          <li class="buildparts-li"><a href="#">Build Yours</a></li>
+          <li class="accparts-li"><a href="#">Accessories</a></li>
+          <li class="contacts-li"><a href="#">Contact</a></li>
+        </ul>
+        <div class="end">
+          <div class="switcher">
+            <div class="circle" title="Toggle Theme"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h3 class="service-header">Welcome to Rig Rectifier</h3>
+      <div class="banner">
+        <div class="slider">
+          <ul class="slider-ul">
+            <li><img src="./img/m1.jpg" /></li>
+            <li><img src="./img/m2.jpg" /></li>
+            <li><img src="./img/m3.jpg" /></li>
+            <li><img src="./img/m4.jpg" /></li>
+            <li><img src="./img/m5.jpg" /></li>
+            <li><img src="./img/m6.jpg" /></li>
+            <li><img src="./img/m7.jpg" /></li>
+            <li><img src="./img/m8.jpg" /></li>
+          </ul>
+        </div>
+        <div class="our-services">
+          <h3 class="service-header">Latest Tech Radar</h3>
+          <div class="service-grid">
+            <div class="grid g1">
+              <p>
+                <span class="g-header">The latest NVIDIA RTX GPU's</span>
+                GeForce RTX™ 30 Series GPUs deliver the ultimate performance for
+                gamers and creators. They’re powered by Ampere—NVIDIA’s 2nd gen
+                RTX architecture—with new RT Cores, Tensor Cores, and streaming
+                multiprocessors for the most realistic ray-traced graphics and
+                cutting-edge AI features. NVIDIA Deep Learning Super Sampling
+                (DLSS) is groundbreaking AI rendering that boosts frame rates
+                with uncompromised image quality using the dedicated AI
+                processing Tensor Cores on GeForce RTX. This gives you the
+                performance headroom to crank up settings and resolutions for an
+                incredible visual experience. The AI revolution has come to
+                gaming.Take your creative projects to a whole new level with
+                GeForce RTX 30 Series GPUs. Delivering AI-acceleration in top
+                creative apps. Backed by the NVIDIA Studio platform of dedicated
+                drivers and exclusive tools. And built to perform in record
+                time. Whether you’re rendering complex 3D scenes, editing 8K
+                video, or livestreaming with the best encoding and image
+                quality, GeForce RTX GPUs give you the performance to create
+                your best.
+              </p>
+              <img src="./img/rtx.png" />
+              <h3 class="service-header">Benchmarks:</h3>
+              <img src="./img/rtx-info1.jpg" />
+              <img src="./img/rtx-info2.jpg" />
+              <img src="./img/rtx-info3.jpg" />
+            </div>
+            <div class="grid g2">
+              <img src="./img/amd.png" />
+              <p>
+                <span class="g-header">The all new AMD 6000 Series</span>
+                The AMD Radeon RX 6000 Series graphics cards represent the
+                forefront of extreme engineering and design to deliver
+                ultra-high frame rates. Powerful new compute units, the all-new
+                AMD Infinity Cache, and large amounts of GDDR6 memory enable the
+                ultimate gaming experience.Enhanced compute units featuring Ray
+                Accelerators, and an advanced visual pipeline in the Radeon™ RX
+                6000 Series supports hardware accelerated raytracing and
+                variable rate shading to drive realistic visuals and high
+                performance in games. With up to 128MB of ground-breaking AMD
+                Infinity Cache acting as a massive bandwidth amplifier, get up
+                to 3.25x the effective bandwidth of 256-bit 16 Gbps GDDR6
+                memory.
+              </p>
+            </div>
+            <div class="grid g2">
+              <h3 class="service-header">Benchmarks:</h3>
+              <img src="./img/amd-info1.jpg" />
+              <img src="./img/amd-info2.png" />
+              <img src="./img/amd-info3.jpg" />
+            </div>
+            <div class="grid g2">
+              <img src="./img/intel.jpg" />
+              <p>
+                <span class="g-header">Intel core 11th Gen</span>
+                11th Generation Intel® Core™ processors redefine Intel® CPU
+                performance for laptop and desktop PCs. New core and graphics
+                architectures, AI-based performance boosts, best-in-class
+                wireless and wired connectivity1, and advanced tuning features2
+                deliver higher levels of power and flow to support your
+                aspirations. 25-watt 11th Gen Intel® Core™ U-Series laptop
+                processors featuring Intel® Iris® Xe Graphics provide
+                discrete-level integrated graphics alongside Intel® Wi-Fi 6 —
+                for boundary-breaking performance in thin and light laptops for
+                everyday use. Higher-powered 35-watt 11th Gen Intel® Core™
+                H-Series laptop processors introduce ultraportable horsepower
+                for gaming and creating. 11th Gen Intel® Core™ S-Series desktop
+                processors provide higher performance to everyday desktop users,
+                enthusiast gamers, and serious creators. Intel® Deep Learning
+                Boost, up to DDR4-3200, 20 CPU PCIe 4.0 lanes, integrated USB
+                3.2 20G, enhanced UHD graphics based on the Intel® Xe
+                architecture, and greater tuning and expandability dramatically
+                increase performance and control. High-performance overclocking
+                for elite gaming and heavy-duty creative production is provided
+                in unlocked 11th Gen Intel® Core™ desktop processor models.
+                Built for business, 11th Gen Intel® Core™ vPro® processors offer
+                all the performance gains of 11th Gen along with modern remote
+                manageability for IT. Just what’s needed for the
+                work-from-anywhere world. Offering a range of CPU models
+                optimized for different levels of gaming, creating, business,
+                and everyday use, there’s an 11th Gen Intel® Core™ laptop or
+                desktop processor designed to do more of what matters to you.
+              </p>
+            </div>
+            <div class="grid g2">
+              <p>
+                <span class="g-header">AMD 5000 series CPU's and APU's</span>
+                The AMD Ryzen family is an x86-64 microprocessor family from
+                AMD, based on the Zen microarchitecture. The Ryzen lineup
+                includes Ryzen 3, Ryzen 5, Ryzen 7, Ryzen 9, and Ryzen
+                Threadripper with up to 64 cores. All consumer Ryzens have an
+                unlocked multiplier and all support Simultaneous Multithreading
+                (SMT) except earlier Zen/Zen+ based desktop Ryzen 3 and
+                Zen/Zen+/Zen 2 (Lucienne excluded) based mobile Ryzen 3. the AMD
+                Ryzen 5000 series of processors have been gracing us with its
+                presence for some time now. Its mid-range and high-end CPUs, in
+                fact, are already powering such popular desktop PCs as the
+                Alienware R10 Ryzen Edition and a gaming laptop such as the ASUS
+                ROG Zephyrus Duo SE, as there’s a big focus for this
+                newly-launched lineup of processors on gaming. With the AMD
+                Ryzen 5000 CPUs, AMD has finally dethroned Intel when it comes
+                to raw gaming performance. The new CPU lineup is led by the AMD
+                Ryzen 9 5950X, a high-end chip packed with 16 cores and 32
+                threads, with a whopping 4.9GHz boost clock. That's a pretty
+                massive generational leap over the Ryzen 9 3950X already, before
+                you consider the boost to IPC (instructions per clock)
+                performance, thanks to the massive Zen 3 redesign.AMD has had
+                several products with Zen 3, including the regular Ryzen 5000
+                and EPYC 7003 processor lineups, and 5000G will take on the same
+                feature set.
+              </p>
+              <img src="./img/amd-pro1.jpg" />
+            </div>
+          </div>
+        </div>
+        <h3 class="service-header">About us:</h3>
+        <p class="about-p">
+          This is a place where you can build you personal/commercial computer
+          according to your needs. Above you can find the pre built computer
+          section which are sorted by their prices according to the task you are
+          going to perform. You can also comapre various computer components
+          performance and their prices. We also provide suggestions for computer
+          accesories.
+        </p>
+        <footer>2021 Rig Rectifier &copy;</footer>
+      </div>
+    </main>
+    <ul id="prebuilt">
+      <li><a href="./pages/home-build.html">Home Builds</a></li>
+      <li><a href="./pages/work-build.html">Work Builds</a></li>
+      <li><a href="./pages/gaming-build.html">Gaming Rigs</a></li>
+      <li><a href="./pages/workstations.html">Workstations</a></li>
+    </ul>
+    <ul id="buildparts">
+      <li><a href="./cpu-page.html">CPUs</a></li>
+      <li><a href="#">RAM</a></li>
+      <li><a href="#">Storage</a></li>
+      <li><a href="#">Motherboard</a></li>
+    </ul>
+    <ul id="accparts">
+      <li><a href="#">Montiors</a></li>
+      <li><a href="#">Mouse</a></li>
+      <li><a href="#">Keyboards</a></li>
+      <li><a href="#">Speakers</a></li>
+    </ul>
+    <ul id="contacts">
+      <li><a href="./contacts.html">9987469728</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #eee;
+  transition: 250ms ease-in-out;
+}
+
+/**************** dark mode *****************/
+body.dark {
+  background-color: #333;
+}
+body.dark .grid * {
+  color: #eee;
+}
+body.dark .service-header {
+  color: #eee;
+}
+body.dark .about-p {
+  color: #eee;
+}
+body.dark .card {
+  background-color: #333;
+}
+body.dark .card * {
+  color: #eee;
+}
+body.dark .computer-price {
+  background-color: #eee;
+  color: #333 !important;
+}
+a {
+  text-decoration: none;
+}
+
+/**************** banner ****************/
+.banner {
+  height: 90vh;
+}
+.slider {
+  position: relative;
+  width: 1264px;
+  height: 768px;
+  margin: 1.5em auto;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.slider-ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 850ms ease;
+  left: 0;
+}
+.slider-ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+.slider-ul li img {
+  border-radius: 10px;
+  width: 1264px;
+  height: 768px;
+}
+
+/************ service grid  *************/
+.our-services {
+  margin: 1em 0;
+}
+.service-aboutus {
+  font-size: 2em;
+  text-align: left;
+  color: #333;
+  padding-top: 2em;
+  font-weight: 700;
+}
+.service-header {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  padding-top: 2em;
+  font-weight: 700;
+}
+.service-grid {
+  margin: 1em auto;
+}
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  margin: 15vh 0;
+}
+.grid * {
+  color: #333;
+}
+.grid .g-header {
+  display: block;
+  padding-bottom: 1em;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.grid p {
+  font-size: 1em;
+  opacity: 0.9;
+}
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+.grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.about-p {
+  margin: 2em auto;
+}
+
+/************ home builds  *************/
+.card {
+  padding: 2em;
+  margin: 10vh 0;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  border-radius: 1em;
+  transition: 200ms ease-in;
+}
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+.card * {
+  color: #333;
+}
+.card img {
+  width: 60%;
+  height: 60vh;
+  border-radius: 1em;
+}
+.computer-name {
+  font-size: 2em;
+}
+.computer-info {
+  font-size: 1.1em;
+  opacity: 0.8;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.p-inside-p {
+  margin-bottom: 0.8em;
+}
+.computer-price {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #eee !important;
+  background-color: #333;
+  padding: 10px 0;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  width: 30%;
+}
+
+/******************* drop down *********************/
+#prebuilt {
+  background-color: #eee;
+  list-style: none;
+  position: absolute;
+  top: 8vh;
+  left: 38.25vw;
+  padding: 3em;
+  display: grid;
+  gap: 1em;
+  border-radius: 10px;
+  transition: 250ms ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#prebuilt.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+#prebuilt li a {
+  text-decoration: none;
+  color: #333;
+}
+#prebuilt li {
+  padding-bottom: 2px;
+  position: relative;
+}
+#prebuilt li::after {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 250ms ease;
+  transform-origin: center;
+}
+#prebuilt li:hover::after {
+  transform: scaleX(1);
+}
+#accparts {
+  background-color: #eee;
+  list-style: none;
+  position: absolute;
+  top: 8vh;
+  left: 54vw;
+  padding: 3em;
+  display: grid;
+  gap: 1em;
+  border-radius: 10px;
+  transition: 250ms ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#accparts.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+#accparts li a {
+  text-decoration: none;
+  color: #333;
+}
+#accparts li {
+  padding-bottom: 2px;
+  position: relative;
+}
+#accparts li::after {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 250ms ease;
+  transform-origin: center;
+}
+#accparts li:hover::after {
+  transform: scaleX(1);
+}
+#buildparts {
+  background-color: #eee;
+  list-style: none;
+  position: absolute;
+  top: 8vh;
+  left: 46vw;
+  padding: 3em;
+  display: grid;
+  gap: 1em;
+  border-radius: 10px;
+  transition: 250ms ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#buildparts.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+#buildparts li a {
+  text-decoration: none;
+  color: #333;
+}
+#buildparts li {
+  padding-bottom: 2px;
+  position: relative;
+}
+#buildparts li::after {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 250ms ease;
+  transform-origin: center;
+}
+#buildparts li:hover::after {
+  transform: scaleX(1);
+}
+.product-image {
+  height: 200px !important;
+  width: 200px !important;
+}
+.product-price {
+  font-size: 1em;
+}
+#contacts {
+  background-color: #eee;
+  list-style: none;
+  position: absolute;
+  top: 8vh;
+  left: 60vw;
+  padding: 3em;
+  display: grid;
+  gap: 1em;
+  border-radius: 10px;
+  transition: 250ms ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#contacts.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+#contacts li a {
+  text-decoration: none;
+  color: #333;
+}
+#contacts li {
+  padding-bottom: 2px;
+  position: relative;
+}
+#contacts li::after {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 250ms ease;
+  transform-origin: center;
+}
+#contacts li:hover::after {
+  transform: scaleX(1);
+}

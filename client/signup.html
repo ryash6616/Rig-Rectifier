@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Signup</title>
+
+    <!-- bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .card {
+        /* css box shadwow generator */
+        -webkit-box-shadow: 10px 10px 47px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 47px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 47px -9px rgba(0, 0, 0, 0.75);
+      }
+
+      .card-header {
+        /* font from google fonts */
+        font-family: "Roboto Slab", serif;
+        font-size: 30px;
+
+        /* relaxing red for card header from ui gradients*/
+
+        background: #fffbd5; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #04067e,
+          #0ae9de
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #04067e,
+          #0ae9de
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      body {
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+        background-size: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <img
+        src="logo.png"
+        width="200"
+        height="80"
+        class="d-inline-block align-top"
+        alt=""
+      />
+
+      <div class="d-flex justify-content-end">
+        <a
+          href="index (1).html"
+          class="btn btn-outline-danger"
+          style="margin-right: 40px; border: 0px"
+          >HOME</a
+        >
+        <a
+          href="login.html"
+          class="btn btn-outline-danger"
+          style="margin-right: 40px; border: 0px"
+          >LOGIN
+        </a>
+        <a
+          href="aboutus.html"
+          class="btn btn-outline-danger"
+          style="border: 0px"
+          >CONTACT US</a
+        >
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-3">
+        <!-- blank column of 3 units -->
+      </div>
+
+      <div class="col-6">
+        <div class="card text-center" style="margin-top: 40px">
+          <div class="card-header">SIGN UP</div>
+
+          <div class="card-body">
+            <form method="POST" action="signup_back.php">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Username"
+                name="username"
+                required
+              />
+
+              <br />
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="Enter Phone No."
+                name="phone"
+                required
+              />
+
+              <br />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+
+              <br />
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <br />
+              <button
+                type="submit"
+                name="submit"
+                class="btn btn-primary btn-lg btn-block"
+              >
+                SIGN UP
+              </button>
+            </form>
+          </div>
+
+          <div class="card-footer text-muted">
+            <a href="login.html" style="text-decoration: none"
+              >Already have an account? Log in</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <!-- blank column of 3 units -->
+      </div>
+    </div>
+  </body>
+</html>

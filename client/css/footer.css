@@ -1,0 +1,14 @@
+/* dark mode  */
+body.dark footer {
+  color: #eee;
+}
+
+/* footer  */
+footer {
+  width: 80%;
+  margin: 0 auto;
+  height: 10vh;
+  text-align: center;
+  color: #333;
+  opacity: 0.6;
+}
